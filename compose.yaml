@@ -1,0 +1,6 @@
+﻿services:
+  blazor-server-template:
+    image: blazor-server-template
+    build:
+      context: .
+      dockerfile: Dockerfile
