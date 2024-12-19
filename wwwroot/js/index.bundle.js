@@ -1181,7 +1181,7 @@ eval("//# sourceMappingURL=declarations.js.map\n\n//# sourceURL=webpack://chatap
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flowbite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flowbite */ \"./node_modules/flowbite/lib/esm/index.js\");\n// write your javascript code here!\n\n\n\n\nlet dotNet = null // this variable will help invoke any method from .razor file (e.g Home.razor)\n\nwindow.initializeFlowbite = (dotnet) => { \n    dotNet = dotnet\n    ;(0,flowbite__WEBPACK_IMPORTED_MODULE_0__.initFlowbite)()\n}\n\n//# sourceURL=webpack://chatapp-dotnet-mvc/./wwwroot/js/site.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var flowbite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flowbite */ \"./node_modules/flowbite/lib/esm/index.js\");\n// write your javascript code here!\n\n\n\n \n// There is a special global variable that is already exists it's called DotNet\n// This DotNet variable will allow you to call any method from your .razor (e.g Home.razor)\n\nwindow.initializeFlowbite = () => {\n    console.log(DotNet)\n    ;(0,flowbite__WEBPACK_IMPORTED_MODULE_0__.initFlowbite)()  \n} \n\n\n//# sourceURL=webpack://chatapp-dotnet-mvc/./wwwroot/js/site.js?");
 
 /***/ })
 
